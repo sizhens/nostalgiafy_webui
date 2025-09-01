@@ -46,7 +46,7 @@ years_list = nostalgia_years_generator()
 
 valid_dates_db = requests.get('https://raw.githubusercontent.com/mhollingshead/billboard-hot-100/main/valid_dates.json') # This is a database of valid dates for Billboard entries
 
-random_numbers = (random.sample(range(100), int(f"{number_of_songs_per_year}")))
+random_numbers = (random.sample(range(40), int(f"{number_of_songs_per_year}")))
 
 def dates_finder(year):
     loaded_data = valid_dates_db.json()
